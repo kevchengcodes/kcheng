@@ -1,0 +1,5 @@
+SPEEA/Files
+.ipynb_checkpoints/
+*.pdf
+*.csv
+*.pickle

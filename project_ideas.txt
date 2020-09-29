@@ -1,0 +1,6 @@
+gui for mortgage calculator
+restapi something
+personal website
+something in Java
+something with cloud
+something with transit

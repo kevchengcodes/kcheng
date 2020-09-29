@@ -31,7 +31,7 @@ triangle = [[]]*side # initialize list of lists
 i = 0 # step through st
 for i in range(0,len(st)-1,3):
     x = st[i]+st[i+1]
-    temp = []
+    
     temp.append(x)
     triangle[y] = temp
     #triangle[y] = temp.append(x)

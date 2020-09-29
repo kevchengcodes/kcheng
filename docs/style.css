@@ -1,0 +1,275 @@
+html {font-family: "Roboto", sans-serif;}
+.nav-container{background:gray repeat-x 0 0;
+display:block;}
+.f-nav{z-index: 9999; position: fixed; left: 0;top: 0;width: 100%;}
+.nav {height: 0px;}
+.nav ul {list-style:none;}
+	.nav ul li {float: right; margin-top: 0px;
+		padding: 12px;
+		border-right: 1px solid white;}
+	.nav ul li:first-child{padding-left: 0;}
+	.nav ul li a {text-decoration: none;
+		color: white;}
+	.nav ul li a:hover {text-decoration: underline;}
+#name {font-size: 55px;
+display: inline;
+margin: 0px,0px,0px,0px;
+}
+@font-face {font-family: variane;
+src: url(MarketingScript.ttf); }
+#portfolio {font-size: 50px;
+font-family: variane;
+margin: 0px,0px,0px,0px;
+display: inline;
+}
+#tagline {font-size: 20px;
+font-family: variane;
+margin: 0px,0px,0px,0px;}
+
+.header {
+	margin-top: 0;
+	text-align: center;
+	color: white;
+}
+.Linkedin-button {
+	padding-top:10px;
+	padding-bottom:5px;
+	border: 6px solid !important;
+    border-radius: 10px !important;
+    height: 50px;
+    border-color: purple !important;
+    background: purple;
+    color: #fff;
+    font-family: lato;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    padding-top: 5px !important;
+    text-shadow: none;
+    text-transform: none !important;
+    font-family: "Roboto", sans-serif;
+    outline:none;
+}
+.Projects-button {
+	padding-top:10px;
+	padding-bottom:5px;
+	border: 1px solid !important;
+    border-radius: 10px !important;
+    height: 50px;
+    border-color: white !important;
+    background: none;
+    color: #fff;
+    font-family: lato;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    padding-top: 5px !important;
+    text-shadow: none;
+    text-transform: none !important;
+    font-family: "Roboto", sans-serif;
+    outline:none;
+}
+button:hover {
+	color: gray;
+}
+a {
+  color:purple;
+}
+
+.facts {
+	color: black;
+	text-align: left;
+	padding-left:150px;
+	padding-right:150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.grad img {
+  width:15%;
+  height:auto;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.Boeing-pic img {
+  width: 15%; 
+  height:auto;
+  padding-bottom: 10px;
+  padding-right:20px;
+}
+
+.contact {
+  text-align:center;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.projects {
+	text-align:center;
+	background: #FAF5F5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.articles {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.article {
+  color: #222;
+  background: rgba(255,255,255,.9);
+  border-spacing: 2px;
+  border-color: gray;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px #e5e5e5 solid;
+}
+
+.current .item {
+  background: rgba(206,220,206,.9);
+}
+
+.item {
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  
+}
+
+.item .source {
+  margin-left: 20px;
+}
+
+.item .title {
+  font-weight: bold;
+}
+
+.item .pubdate {
+  margin-right: 20px;
+}
+
+.item .pubdate {
+  text-align: right;  
+}
+
+.description {
+  display: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #FAF5F5;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.pic {
+border:5px solid purple;}
+/* Initial body */
+body {
+  left: 0;
+  margin: 0;
+  overflow: scroll;
+  position: relative;
+  /*overflow-x: hidden;*/
+}
+
+/* Initial menu */
+.menu {
+  background-color: black;
+  left: -285px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 285px;
+}
+
+/* Basic styling */
+
+.jumbotron {
+  background-image: url('ge-jet-engine.jpg'); 
+  height: 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.menu ul {
+  border-top: 1px solid #636366;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #636366;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.description-close {
+	cursor: pointer;
+	float: right;
+	z-index: 1;
+	padding-top: 0px;
+}
+
+.icon-menu {
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu i {
+  margin-right: 5px;
+}
