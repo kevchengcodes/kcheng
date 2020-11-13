@@ -1,87 +1,150 @@
-html {font-family: "Roboto", sans-serif;}
-.nav-container{background:gray repeat-x 0 0;
-display:block;}
-.f-nav{z-index: 9999; position: fixed; left: 0;top: 0;width: 100%;}
-.nav {height: 0px;}
-.nav ul {list-style:none;}
-	.nav ul li {float: right; margin-top: 0px;
-		padding: 12px;
-		border-right: 1px solid white;}
-	.nav ul li:first-child{padding-left: 0;}
-	.nav ul li a {text-decoration: none;
-		color: white;}
-	.nav ul li a:hover {text-decoration: underline;}
-#name {font-size: 55px;
-display: inline;
-margin: 0px,0px,0px,0px;
+html {font-family: "Roboto", sans-serif;
 }
-@font-face {font-family: variane;
-src: url(MarketingScript.ttf); }
-#portfolio {font-size: 50px;
-font-family: variane;
-margin: 0px,0px,0px,0px;
-display: inline;
+/* Initial body */
+body {
+  left: 0;
+  margin: 0;
+  overflow: scroll;
+  position: relative;
+  /*overflow-x: hidden;*/
 }
-#tagline {font-size: 20px;
-font-family: variane;
-margin: 0px,0px,0px,0px;}
 
-.header {
-	margin-top: 0;
-	text-align: center;
-	color: white;
-}
-.Linkedin-button {
-	padding-top:10px;
-	padding-bottom:5px;
-	border: 6px solid !important;
-    border-radius: 10px !important;
-    height: 50px;
-    border-color: purple !important;
-    background: purple;
-    color: #fff;
-    font-family: lato;
-    font-size: 20px !important;
-    font-weight: 500 !important;
-    padding-top: 5px !important;
-    text-shadow: none;
-    text-transform: none !important;
-    font-family: "Roboto", sans-serif;
-    outline:none;
-}
-.Projects-button {
-	padding-top:10px;
-	padding-bottom:5px;
-	border: 1px solid !important;
-    border-radius: 10px !important;
-    height: 50px;
-    border-color: white !important;
-    background: none;
-    color: #fff;
-    font-family: lato;
-    font-size: 20px !important;
-    font-weight: 500 !important;
-    padding-top: 5px !important;
-    text-shadow: none;
-    text-transform: none !important;
-    font-family: "Roboto", sans-serif;
-    outline:none;
-}
+/*For all buttons, text will gray out when hovered over*/
 button:hover {
-	color: gray;
+ color: gray;
 }
+
+/*All links will by default be purple.*/
 a {
   color:purple;
 }
 
-.facts {
-	color: black;
-	text-align: left;
-	padding-left:150px;
-	padding-right:150px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+/*Navigation bar*/
+.nav-container{
+  background:gray repeat-x 0 0;
+  display:block;
 }
+.f-nav{
+  z-index: 9999; position: fixed; left: 0;top: 0;width: 100%;
+}
+.nav {
+  height: 0px;
+}
+.nav ul {
+  list-style:none;
+}
+.nav ul li {
+  float: right; margin-top: 0px;
+  padding: 12px;
+  border-right: 1px solid white;
+}
+.nav ul li:first-child{
+  padding-left: 0;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+#name {
+  font-size: 55px;
+  display: inline;
+  margin: 0px,0px,0px,0px;
+}
+@font-face {font-family: variane;
+  src: url(MarketingScript.ttf); 
+}
+/*end nav bar*/
+
+/******** MAIN SECTION *********/
+/*Background of main section*/
+.jumbotron {
+  background-image: url('wenatchee.jpg'); 
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*Banner below title name*/
+#portfolio {font-size: 50px;
+  font-family: variane;
+  margin: 0px,0px,0px,0px;
+  display: inline;
+}
+
+/*Text below main photo*/
+#tagline {font-size: 24px;
+  font-family: "Roboto";
+  margin: 0px,0px,0px,0px;
+}
+
+/*Top header section*/
+.header {
+ margin-top: 0;
+ text-align: center;
+ color: white;
+}
+
+/*main photo*/
+.pic {
+  border:5px solid purple;
+}
+
+.Linkedin-button {
+ padding-top:10px;
+ padding-bottom:5px;
+ border: 6px solid !important;
+ border-radius: 10px !important;
+ height: 50px;
+ border-color: purple !important;
+ background: purple;
+ color: #fff;
+ font-family: lato;
+ font-size: 20px !important;
+ font-weight: 500 !important;
+ padding-top: 5px !important;
+ text-shadow: none;
+ text-transform: none !important;
+ font-family: "Roboto", sans-serif;
+ outline:none;
+}
+
+.Projects-button {
+ padding-top:10px;
+ padding-bottom:5px;
+ border: 1px solid !important;
+ border-radius: 10px !important;
+ height: 50px;
+ border-color: white !important;
+ background: none;
+ color: #fff;
+ font-family: lato;
+ font-size: 20px !important;
+ font-weight: 500 !important;
+ padding-top: 5px !important;
+ text-shadow: none;
+ text-transform: none !important;
+ font-family: "Roboto", sans-serif;
+ outline:none;
+}
+/*end main section*/
+
+/*Section to talk about myself.*/
+.facts {
+ color: black;
+ text-align: left;
+ padding-left:150px;
+ padding-right:150px;
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+
+
+/*Probably will delete these pics.*/
 .grad img {
   width:15%;
   height:auto;
@@ -95,55 +158,16 @@ a {
   padding-right:20px;
 }
 
-.contact {
-  text-align:center;
-}
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
+/******* PROJECT SECTION *******/
+/*Container for project list*/
 .projects {
-	text-align:center;
-	background: #FAF5F5;
-	padding-top: 10px;
-	padding-bottom: 10px;
+ text-align:center;
+ background: #FAF5F5;
+ padding-top: 10px;
+ padding-bottom: 10px;
 }
 
-.articles {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
+/*Each individual project in the list*/
 .article {
   color: #222;
   background: rgba(255,255,255,.9);
@@ -153,34 +177,39 @@ input[type=submit]:hover {
   border-bottom: 1px #e5e5e5 solid;
 }
 
+/*Turns the article green when clicked.*/
 .current .item {
   background: rgba(206,220,206,.9);
 }
 
+/*Adds some padding to the article*/
 .item {
   cursor: pointer;
   padding-top: 7px;
   padding-bottom: 7px;
-  
+
 }
 
+/*Project title will be centered*/
 .item .source {
-  margin-left: 20px;
+  text-align: center;
 }
 
+/*Project overview will be bolded*/
 .item .title {
   font-weight: bold;
 }
 
+/*Project date will be right-aligned, with some margin*/
 .item .pubdate {
   margin-right: 20px;
 }
-
 .item .pubdate {
-  text-align: right;  
+  text-align: right;
 }
 
-.description {
+/*Description section that will be toggled on or off*/
+.togglethis {
   display: none;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -190,17 +219,30 @@ input[type=submit]:hover {
   padding-right: 30px;
 }
 
-
-.pic {
-border:5px solid purple;}
-/* Initial body */
-body {
-  left: 0;
-  margin: 0;
-  overflow: scroll;
-  position: relative;
-  /*overflow-x: hidden;*/
+/*x-button to close the description*/
+.description-close {
+ cursor: pointer;
+ float: right;
+ z-index: 1;
+ padding-top: 0px;
 }
+
+/*click to toggle display of description*/
+.expand {
+  cursor: pointer;
+  float: center;
+  z-index: 1;
+  padding-top: 0px;
+  background: none;
+  border: none;
+  display: inline-block;
+  font-size: 14px;
+  color: blue;
+
+}
+/*end project section*/
+
+
 
 /* Initial menu */
 .menu {
@@ -209,17 +251,6 @@ body {
   height: 100%;
   position: fixed;
   width: 285px;
-}
-
-/* Basic styling */
-
-.jumbotron {
-  background-image: url('ge-jet-engine.jpg'); 
-  height: 100%;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
 }
 
 .menu ul {
@@ -249,13 +280,6 @@ body {
   cursor: pointer;
   padding-left: 10px;
   padding-top: 10px;
-}
-
-.description-close {
-	cursor: pointer;
-	float: right;
-	z-index: 1;
-	padding-top: 0px;
 }
 
 .icon-menu {
