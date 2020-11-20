@@ -18,10 +18,10 @@
 
       <!-- Menu -->
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about-me" class="icon-close">About Me</a></li>
+        <li><a href="#projects" class="icon-close">Projects</a></li>
+        <li><a href="#blog" class="icon-close">Blog</a></li>
+        <li><a href="#connect" class="icon-close">Connect</a></li>
       </ul>
     </div>
 
@@ -45,7 +45,7 @@
         <p><a href="https://www.linkedin.com/in/kevin-cheng" target="_blank">
           <button class="Linkedin-button">Connect on LinkedIn</button></a>
           <a href="#projects"><button class="Projects-button">My Projects</button></a>
-        </p><br /> <br /> <a name="about-me"><br /></a> <br /> 
+        </p><br /> <br /> <a name="about-me"><br /></a> <br> 
       </div>
 
 
@@ -54,7 +54,8 @@
         <div class="nav">
           <ul>
             <p></p>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about-me">About Me</a></li>
           </ul>
@@ -65,35 +66,67 @@
     </div>
 
     <!-- About me: -->
+    <h1 class="section-header">ABOUT ME</h1>
     <div class="facts">
-      <h4 style="text-align:center">About Me</h4>
-      <div class="grad"><img src="grad-pic.jpg" alt="Kevin graduated" style="float:right"><p>Hello! Thank you for visiting my page. I'm Kevin. I'm a mechanical engineer, a creative thinker, and a passionate team player. I graduated from Northwestern University in 2016 and am currently living in Seattle, working as a Systems Engineer at Boeing Commercial Airlines.</p>
+      <!-- <div class="grad"><img src="grad-pic.jpg" alt="Kevin graduated" style="float:right"><p>Hello! Thank you for visiting my page. I'm Kevin. I'm a mechanical engineer, a creative thinker, and a passionate team player. I graduated from Northwestern University in 2016 and am currently living in Seattle, working as a Systems Engineer at Boeing Commercial Airlines.</p>
         <p>I'd like to share with you how I got here and where I hope to get to. Let's start with the beginning: what was I passionate about as a kid? Like many budding mechanical engineers, I loved to imagine, to explore, to create. I built sprawling LEGO kingdoms with my friends, I went on runs with the intention of getting lost, I dreamt of a future with flying cars and green energy. </p>
-      </div>
-      <p>My curiosity naturally led me to engineering; my fascination with aerospace and sustainable energy led me to MechE. But MechE wasn't the only thing I was interested in. I knew I wanted to learn more about how to run a company. And how to code. And how to communicate my ideas effectively. That's how I ended up at Northwestern: it gave me the community to grow and the flexibility to expand. From here, I started to learn how management thinks with my Certificate in Managerial Analytics from the business school. I started to code both within my curriculum and from designing webpages for Dance Marathon. And I became who I am today through my friends, my struggles, and my accomplishments.</p>  
-      <div class="Boeing-pic"><img src="Boeing.jpg" alt="Boeing" style="float:left">
+      </div> -->
+      <div class="blurb">
+        <p>My curiosity naturally led me to engineering; my fascination with aerospace and sustainable energy led me to MechE. But MechE wasn't the only thing I was interested in. I knew I wanted to learn more about how to run a company. And how to code. And how to communicate my ideas effectively. That's how I ended up at Northwestern: it gave me the community to grow and the flexibility to expand. From here, I started to learn how management thinks with my Certificate in Managerial Analytics from the business school. I started to code both within my curriculum and from designing webpages for Dance Marathon. And I became who I am today through my friends, my struggles, and my accomplishments.</p>  
+      <!-- <div class="Boeing-pic"><img src="Boeing.jpg" alt="Boeing" style="float:left">
         <p>Now, I look forward to furthering my career at Boeing. However, I am also looking for opportunities to explore my other passions. My experience in Northwestern's Rocketry Society gave me the dream to build the world's forthcoming space exploration technology. My specialization in Energy and Sustainability at NU fuels my hope to work in sustainable energy, electric vehicles, and urban planning. And my get-things-done mentality, passion for coding, and interest in business drives my desire to work in a start-up.<p/>
-        </div>
+        </div> -->
         <p>Other facts about me... I love playing soccer, piano, and going on hikes. I stay as active as possible in the community and organized numerous philanthropies benefitting <a href="https://www.stjude.org" target="_blank">St. Jude Children's Research Hospital</a> and the <a href="https://evanstonanimalshelter.net/" target="_blank">Evanston Animal Shelter</a>. I also participated and helped put together Northwestern's annual <a href="https://www.nudm.org" target="_blank">30 Hour Dance Marathon</a> from 2013-2016, serving as part of the website and finance committees. Over that 4 year span, I am proud to say that we raised over $4.5 million for our beneficiaries! I volunteered constantly in the Evanston area at places such as The Campus Kitchens Project, which worked to pack and deliver food to the underprivileged families in the surrounding area, and The Talking Farm, an urban farm aimed at teaching young children about urban farming and sustainability. Wherever I end up, I look forward to continuing my engagement with the community around me.</p>
         <p><strong> Don't forget to connect with me on <a href="https://www.linkedin.com/in/kevin-cheng/" target="_blank">LinkedIn</a>, and check out my resume <a href="Kevin_Cheng-Resume.pdf">here</a>.</strong></p>
       </div>
+    </div>
 
 
     <!-- Projects Section
       Contains buttons to expand/collapse project descriptions -->
-      <div class="projects">
-        <h3><a name="projects">My Projects</a></h3>
-        <div class="articles container">
+      <a name="projects"></a>
+      <h1 class="section-header">MY PROJECTS</h3>
+        <div class="projects">
+          <div class="articles container">
+
+            <!-- Describe the website -->
+            <div class="article">
+              <div class="item row">
+                <div class="col-xs-3">
+                  <p class="source">This website!</p>
+                </div>
+                <div class="col-xs-6">
+                  <p class="title">I built this page from scratch (with a lot of Googling, of course) using HTML, CSS, and jQuery.
+                    You can check out the source code <a href="https://github.com/kevchengcodes/kcheng/tree/master/docs">here</a>
+                  </p><br>
+                  <button id="expand-web"class="expand">See more details.</button>
+                </div>
+                <div class="col-xs-3">
+                  <p class="pubdate">November 2020</p>
+                </div>
+              </div>
+
+              <div id="description-web" class="togglethis">
+               <div id="description-close-web" class="description-close" >
+                 <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+               </div>
+               <div class="col-xs-3">&nbsp;</div>
+               <div class="col-xs-6">
+                <p>Description of project here</p>
+              </div>
+              <div class="col-xs-3">&nbsp;</div>
+            </div>
+
+          </div>
 
           <!-- first project -->
           <div class="article">
             <div class="item row">
-              <p>Web Scraping</p>
+              <p class="source">Web Scraping</p>
               <div class="col-xs-6">
-                <p class="title">Perhaps the most important aspect of data analytics is the data collection process. I wanted to learn more about how to grab data through online data by building this web scraper.<br><br>
-                  <button id="expand-0"class="expand">See more details.</button>
-                </p>
-
+                <p class="title">Perhaps the most important aspect of data analytics is the data collection process. I wanted to learn more about how to grab data through online data by building this web scraper.
+                </p><br>
+                <button id="expand-0"class="expand">See more details.</button>
               </div>
               <div class="col-xs-3">
                 <p class="pubdate">October 2020</p>
@@ -164,44 +197,74 @@
       </div>
     </div>
 
-  </div>
+    <!-- end project -->
+
+
+  </div> <!-- end project container -->
 </div> <!-- end projects -->
 
 
+<a name="blog"></a>
+<h1 class="section-header">BLOG</h1>
+<div class="Blog-post">
+  <div class="blurb">
+    <p>This is my blog</p><br><br><br><br><br><br><br><br>
+  </div>
+</div>
 
-<!-- Jquery scripts -->
-<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script src='app.js'></script>
+<a name="connect"></a>
+<h1 class="section-header">CONNECT</h1>
+<div class="connect-icons">
+  <a href="https://www.linkedin.com/in/kevin-cheng/" target="_blank">
+    <img src="linkedin.png" height="100px" style="padding-right:60px"></a>
+    <a href="https://github.com/kevchengcodes/kcheng" target="_blank">
+      <img src="github.png" height="75px" style="padding-bottom:13px"></a>
+      <p></p>
+      <p></p>
+      <br><br><br><br>
+  </div>
 
 
-<!-- Button expand and hide -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $("#expand-0").click(function(){
-      $("#description-0").toggle();
+  <!-- Jquery scripts -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src='app.js'></script>
+
+
+  <!-- Button expand and hide -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#expand-web").click(function(){
+        $("#description-web").toggle();
+      });
+      $("#description-close-web").click(function(){
+        $("#description-web").hide();
+      });
+
+      $("#expand-0").click(function(){
+        $("#description-0").toggle();
+      });
+      $("#description-close-0").click(function(){
+        $("#description-0").hide();
+      });
+
+      $("#expand-1").click(function(){
+        $("#description-1").toggle();
+      });
+      $("#description-close-1").click(function(){
+        $("#description-1").hide();
+      });
+
+      $("#expand-2").click(function(){
+        $("#description-2").toggle();
+      });
+      $("#description-close-2").click(function(){
+        $("#description-2").hide();
+      });
+
+
     });
-    $("#description-close-0").click(function(){
-      $("#description-0").hide();
-    });
-
-    $("#expand-1").click(function(){
-      $("#description-1").toggle();
-    });
-    $("#description-close-1").click(function(){
-      $("#description-1").hide();
-    });
-
-    $("#expand-2").click(function(){
-      $("#description-2").toggle();
-    });
-    $("#description-close-2").click(function(){
-      $("#description-2").hide();
-    });
-
-
-  });
-</script>
+  </script>
 
 </body>
 
