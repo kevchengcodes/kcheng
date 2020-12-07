@@ -2,7 +2,7 @@
   <html lang="en">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="ut 8">
     <link rel='stylesheet' href='style.css'>
     <title>Kevin Cheng</title>
   </head>
@@ -40,7 +40,7 @@
         <p id="portfolio">Software Engineer.</p>
         <br />
 
-        <a href="https://www.linkedin.com/in/kevin-cheng/" target="_blank"><img src="https://media-exp1.licdn.com/dms/image/C5603AQHc1Rr1CXG6Rg/profile-displayphoto-shrink_400_400/0?e=1606953600&v=beta&t=aEVggCCH-Qv2OyaMyWj7VB0HS6UuE5P5D4DXUwkYT6Y" height="250px" class="pic"></a> 
+        <a href="https://www.linkedin.com/in/kevin-cheng/" target="_blank"><img src="kevin_cheng.jpg" height="250px" class="pic"></a> 
 
         <p id="signature"><br></p>
 
@@ -80,13 +80,13 @@
           I'm currently working remotely in Seattle and having a great time building position, navigation, and timing solutions into our edge computing platforms.</p>  
           <img class="logos" src="swoop_logo.png" style="height:56px">
           <p>I joined Swoop Search in November 2020 after almost four years at Boeing.
-          During my time there, I created predictive algorithms in Python/SQL, real-time simulations in MATLAB/Simulink, and flight guidance optimization software in C/C++. </p>
+          During my time there, I created predictive maintenance algorithms in Python/SQL, real-time simulations in MATLAB/Simulink, and flight guidance optimization software in C/C++. </p>
           <img class="logos" src="boeing_logo.jpg" style="height:56px">
           <p>I started at Boeing in early 2017 after graduating with my BS and MS in Mechanical Engineering from Northwestern University (Go 'Cats).
-          This is where my interest in software engineering began, and I am proud and grateful that I've been able to pursue my passion and build myself into a software generalist throughout my entire career.</p>
+          This is where my interest in software engineering began, and I am proud and grateful that I've been able to pursue my passion and build myself into a software generalist throughout my career.</p>
           <img class="logos" src="northwestern_logo.png" style="background-color:white">
           <p>Moving forward, I'm excited to continue innovating at the cutting-edge of technology and software. 
-          I am also studying computer science as part of the OMSCS program at Georgia Tech, aiming to graduate in 2022 with a specialization in Machine Learning.</p>
+          I am also studying computer science as part of the OMSCS program at Georgia Tech, aiming to graduate in 2023 with a specialization in Machine Learning.</p>
           <img class="logos" src="GT_logo.png" style="background-color:white">
           <p>Thank you for visiting my page. Please feel free to connect with me on LinkedIn, check out some of my projects I've been working on, or read through some of my blog posts.</p>
           
@@ -110,7 +110,8 @@
                 </div>
                 <div class="col-xs-6">
                   <p class="title">I built this page from scratch (with a lot of Googling, of course) using HTML, CSS, and jQuery.
-                    You can check out the source code <a href="https://github.com/kevchengcodes/kcheng/tree/master/docs">here</a>
+                    You can check out the source code <a href="https://github.com/kevchengcodes/kcheng/tree/master/docs" 
+                    target="_blank">here</a>
                   </p><br>
                   <button id="expand-web"class="expand">See more details.</button>
                 </div>
@@ -125,95 +126,144 @@
                </div>
                <div class="col-xs-3">&nbsp;</div>
                <div class="col-xs-6">
-                <p>Description of project here</p>
-              </div>
-              <div class="col-xs-3">&nbsp;</div>
-            </div>
-
+                <p>I've always been interested in UI/UX and front-end design, so I knew I'd have a lot of fun building a webpage
+                to showcase myself. This page started out as a basic collection of simple divs, paragraphs, and images, but as I got more into it, I built some functions that I personally think are pretty neat, such as:</p>
+                <p>The ability to collapse or expand sections (like this one) by assigning it an ID and writing a jQuery script for a button to control the display:</p>
+                <div class="inlinecode">
+                  <code>
+                    $(document).ready(function(){<br>
+                    $("#expand-web").click(function(){<br>
+                    $("#description-web").toggle();<br>
+                    $('html, body').animate({<br>
+                    scrollTop: $("#expand-web").offset().top<br>
+                }, 200);<br>
+                  });<br>
+                  $("#description-close-web").click(function(){<br>
+                  $("#description-web").hide();<br>
+                });<br>
+              };
+            </code>
           </div>
 
-          <!-- first project -->
-          <div class="article">
-            <div class="item row">
-              <p class="source">Web Scraping</p>
-              <div class="col-xs-6">
-                <p class="title">Perhaps the most important aspect of data analytics is the data collection process. I wanted to learn more about how to grab data through online data by building this web scraper.
-                </p><br>
-                <button id="expand-0"class="expand">See more details.</button>
-              </div>
-              <div class="col-xs-3">
-                <p class="pubdate">October 2020</p>
-              </div>
-            </div>
-
-            <div id="description-0" class="togglethis">
-             <div id="description-close-0" class="description-close" >
-               <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
-             </div>
-             <div class="col-xs-3">&nbsp;</div>
-             <div class="col-xs-6">
-              <p>Description of project here</p>
-            </div>
-            <div class="col-xs-3">&nbsp;</div>
-          </div>
+          <p>Or changing the transparency of a background image without affecting the characteristics of the text in front of it, by assigning the opacity of the image in a pseudo-element:</p>
+          <div class="inlinecode">
+            <code>
+              .Blog-post::before {<br>
+              content:"";<br>
+              background-image:url('windmill.jpg');<br>
+              background-size: cover;<br>
+              position: absolute;<br>
+              top: 0px;<br>
+              right: 0px;<br>
+              bottom: 0px;<br>
+              left: 0px;<br>
+              opacity: 0.25;<br>
+            }
+          </code>
         </div>
 
-        <!-- second project -->
-        <div class="article">
-          <div class="item row">
-            <div class="col-xs-3">
-              <p class="source">Stock Price Prediction Through Machine Learning</p>
-            </div>
-            <div class="col-xs-6">
-              <p class="title">I recently have become super interested in investing. Using open source code as an example, I developed algorithms to predict a target stock price based on individual performances within the S&P 500 index.</p><br>
-              <button class="expand" id="expand-1">See more details.</button>
-            </div>
-            <div class="col-xs-3">
-              <p class="pubdate">In Work</p>
-            </div>
-          </div>
-          <div class="togglethis" id="description-1">
-           <div class="description-close" id="description-close-1">
-             <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
-           </div>
-           <div class="col-xs-3">&nbsp;</div>
-           <div class="col-xs-6">
-            <p>Description of project here</p>
-          </div>
-          <div class="col-xs-3">&nbsp;</div>
-        </div>
-      </div>
-
-      <!-- third project -->
-      <div class="article">
-        <div class="item row">
-          <div class="col-xs-3">
-            <p class="source">Project Euler</p>
-          </div>
-          <div class="col-xs-6">
-            <p class="title">I like math and I like coding. Naturally, that led me to Project Euler.</p><br>
-            <button class="expand" id="expand-2">See more details.</button>
-          </div>
-          <div class="col-xs-3">
-            <p class="pubdate">Endless</p>
-          </div>
-        </div>
-        <div class="togglethis" id="description-2">
-         <div class="description-close" id="description-close-2">
-           <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
-         </div>
-         <div class="col-xs-3">&nbsp;</div>
-         <div class="col-xs-6">
-          <p>Description of project here</p>
-        </div>
-        <div class="col-xs-3">&nbsp;</div>
-      </div>
+        <p>Or creating a floating navigation bar by using jQuery to add a class imposing a top-level z-index and positioning at the top of the screen if the user scrolls down:</p>
+        <div class="inlinecode">
+          <code>
+            var nav=$('.nav-container');<br>
+            $(window).scroll(function(){<br>
+            if ($(this).scrollTop()>300){<br>
+            nav.addClass("f-nav");<br>
+          }<br>
+          else {nav.removeClass("f-nav");}<br>
+        });<br>
+      </code>
     </div>
+    <p>The best part of creating your own webpage is how creative you can be. You can dream up any features that you might want to incorporate, and chances are, you can code it.</p>
 
-    <!-- end project -->
+  </div>
+  <div class="col-xs-3">&nbsp;</div>
+</div>
+
+</div>
+
+<!-- first project -->
+<div class="article">
+  <div class="item row">
+    <p class="source">Web Scraping</p>
+    <div class="col-xs-6">
+      <p class="title">Perhaps the most important aspect of data analytics is the data collection process. I wanted to learn more about how to grab data through online data by building this web scraper.
+      </p><br>
+      <button id="expand-0"class="expand">See more details.</button>
+    </div>
+    <div class="col-xs-3">
+      <p class="pubdate">October 2020</p>
+    </div>
+  </div>
+
+  <div id="description-0" class="togglethis">
+   <div id="description-close-0" class="description-close" >
+     <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+   </div>
+   <div class="col-xs-3">&nbsp;</div>
+   <div class="col-xs-6">
+    <p>Description of project here</p>
+  </div>
+  <div class="col-xs-3">&nbsp;</div>
+</div>
+</div>
+
+<!-- second project -->
+<div class="article">
+  <div class="item row">
+    <div class="col-xs-3">
+      <p class="source">Stock Price Prediction Through Machine Learning</p>
+    </div>
+    <div class="col-xs-6">
+      <p class="title">I recently have become super interested in investing. Using open source code as an example, I developed algorithms to predict a target stock price based on individual performances within the S&P 500 index.</p><br>
+      <button class="expand" id="expand-1">See more details.</button>
+    </div>
+    <div class="col-xs-3">
+      <p class="pubdate">In Work</p>
+    </div>
+  </div>
+  <div class="togglethis" id="description-1">
+   <div class="description-close" id="description-close-1">
+     <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+   </div>
+   <div class="col-xs-3">&nbsp;</div>
+   <div class="col-xs-6">
+    <p>Description of project here</p>
+  </div>
+  <div class="col-xs-3">&nbsp;</div>
+</div>
+</div>
+
+<!-- third project -->
+<div class="article">
+  <div class="item row">
+    <div class="col-xs-3">
+      <p class="source">Project Euler</p>
+    </div>
+    <div class="col-xs-6">
+      <p class="title">I like math and I like coding. Naturally, that led me to Project Euler.</p><br>
+      <button class="expand" id="expand-2">See more details.</button>
+    </div>
+    <div class="col-xs-3">
+      <p class="pubdate">Endless</p>
+    </div>
+  </div>
+  <div class="togglethis" id="description-2">
+   <div class="description-close" id="description-close-2">
+     <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+   </div>
+   <div class="col-xs-3">&nbsp;</div>
+   <div class="col-xs-6">
+    <p>Description of project here</p>
+  </div>
+  <div class="col-xs-3">&nbsp;</div>
+</div>
+</div>
+
+<!-- end project -->
 
 
-  </div> <!-- end project container -->
+</div> <!-- end project container -->
 </div> <!-- end projects -->
 
 
@@ -249,6 +299,9 @@
       $(document).ready(function(){
         $("#expand-web").click(function(){
           $("#description-web").toggle();
+          $('html, body').animate({
+                    scrollTop: $("#expand-web").offset().top
+                }, 200);
         });
         $("#description-close-web").click(function(){
           $("#description-web").hide();
@@ -256,6 +309,9 @@
 
         $("#expand-0").click(function(){
           $("#description-0").toggle();
+          $('html, body').animate({
+                    scrollTop: $("#expand-0").offset().top
+                }, 200);
         });
         $("#description-close-0").click(function(){
           $("#description-0").hide();
@@ -263,6 +319,9 @@
 
         $("#expand-1").click(function(){
           $("#description-1").toggle();
+          $('html, body').animate({
+                    scrollTop: $("#expand-1").offset().top
+                }, 200);
         });
         $("#description-close-1").click(function(){
           $("#description-1").hide();
@@ -270,6 +329,9 @@
 
         $("#expand-2").click(function(){
           $("#description-2").toggle();
+          $('html, body').animate({
+                    scrollTop: $("#expand-2").offset().top
+                }, 200);
         });
         $("#description-close-2").click(function(){
           $("#description-2").hide();
