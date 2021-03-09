@@ -132,15 +132,15 @@
                 <div class="inlinecode">
                   <code>
                     $(document).ready(function(){<br>
-                    $("#expand-web").click(function(){<br>
-                    $("#description-web").toggle();<br>
-                    $('html, body').animate({<br>
-                    scrollTop: $("#expand-web").offset().top<br>
-                }, 200);<br>
-                  });<br>
-                  $("#description-close-web").click(function(){<br>
-                  $("#description-web").hide();<br>
-                });<br>
+                    &nbsp;&nbsp;&nbsp;$("#expand-web").click(function(){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#description-web").toggle();<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('html, body').animate({<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scrollTop: $("#expand-web").offset().top<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 200);<br>
+                  &nbsp;&nbsp;&nbsp;});<br>
+                  &nbsp;&nbsp;&nbsp;$("#description-close-web").click(function(){<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#description-web").hide();<br>
+                &nbsp;&nbsp;&nbsp;});<br>
               };
             </code>
           </div>
@@ -149,15 +149,15 @@
           <div class="inlinecode">
             <code>
               .Blog-post::before {<br>
-              content:"";<br>
-              background-image:url('windmill.jpg');<br>
-              background-size: cover;<br>
-              position: absolute;<br>
-              top: 0px;<br>
-              right: 0px;<br>
-              bottom: 0px;<br>
-              left: 0px;<br>
-              opacity: 0.25;<br>
+              &nbsp;&nbsp;&nbsp;content:"";<br>
+              &nbsp;&nbsp;&nbsp;background-image:url('windmill.jpg');<br>
+              &nbsp;&nbsp;&nbsp;background-size: cover;<br>
+              &nbsp;&nbsp;&nbsp;position: absolute;<br>
+              &nbsp;&nbsp;&nbsp;top: 0px;<br>
+              &nbsp;&nbsp;&nbsp;right: 0px;<br>
+              &nbsp;&nbsp;&nbsp;bottom: 0px;<br>
+              &nbsp;&nbsp;&nbsp;left: 0px;<br>
+              &nbsp;&nbsp;&nbsp;opacity: 0.25;<br>
             }
           </code>
         </div>
@@ -166,11 +166,11 @@
         <div class="inlinecode">
           <code>
             var nav=$('.nav-container');<br>
-            $(window).scroll(function(){<br>
-            if ($(this).scrollTop()>300){<br>
-            nav.addClass("f-nav");<br>
-          }<br>
-          else {nav.removeClass("f-nav");}<br>
+            &nbsp;&nbsp;&nbsp;$(window).scroll(function(){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($(this).scrollTop()>300){<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nav.addClass("f-nav");<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+          &nbsp;&nbsp;&nbsp;else {nav.removeClass("f-nav");}<br>
         });<br>
       </code>
     </div>
@@ -187,7 +187,7 @@
   <div class="item row">
     <p class="source">Web Scraping</p>
     <div class="col-xs-6">
-      <p class="title">Perhaps the most important aspect of data analytics is the data collection process. I wanted to learn more about how to grab data through online data by building this web scraper.
+      <p class="title">Instead of trying to collect data from numerous, disparate sources, I built a web scraper to build a single, easy to analyze dataset.
       </p><br>
       <button id="expand-0"class="expand">See more details.</button>
     </div>
@@ -202,7 +202,20 @@
    </div>
    <div class="col-xs-3">&nbsp;</div>
    <div class="col-xs-6">
-    <p>Description of project here</p>
+    <p>This one was a bit different than ones I've explored before for two main reasons:</p>
+    <p>1. The site I was scraping required credentials. This gave me exposure to using Python's <code>requests</code> library.</p>
+    <div class="inlinecode">
+      <code>
+        import requests<br>
+        url = 'website.com'<br>
+        payload = {"access_login":"name@company.com","access_password":"password"}<br>
+        with requests.Session as session:<br>
+        &nbsp;&nbsp;&nbsp;port = session.post(url, data=payload)<br>
+        &nbsp;&nbsp;&nbsp;r=session.get(url)
+      </code>
+    </div>
+    <p>2. The data was in PDF form. Luckily there's a Python library for everything. I used <code>tabula</code> and <code>PyPDF2</code> to read a specific table from the PDF by specifying its relative position on the page </p>
+
   </div>
   <div class="col-xs-3">&nbsp;</div>
 </div>
